@@ -1,5 +1,6 @@
 //Global Variables
 float btn1X, btn1Y, btn2X, btn2Y, btnWidth, btnHeight, borderRadius;
+color black;
 //
 void setup() {
   
@@ -42,14 +43,21 @@ void setup() {
   btnWidth = width*2/7;
   btnHeight = height/7;
   borderRadius = 5;
+  black = #000000;
   
+
+  
+} //End setup()
+//
+void draw() {
+  background(black);
   //Rectangle Setup
   rect(btn1X,btn1Y, btnWidth, btnHeight, borderRadius);
   rect(btn2X,btn1Y, btnWidth, btnHeight, borderRadius);
   
-} //End setup()
-//
-void draw() {} //End draw()
+  //rect();// Func of btn1
+  //ellipse(); //func of btn2
+} //End draw()
 //
 void keyPressed() {} //End keyPressed()
 //
